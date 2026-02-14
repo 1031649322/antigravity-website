@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 "use client";
 
 import { useState, useEffect, useRef } from "react";
@@ -204,8 +205,8 @@ function ProductCard({
                     </div>
                     <span
                         className={`ml-4 px-3 py-1 rounded-full text-xs ${product.is_active
-                                ? "bg-green-500/10 text-green-400"
-                                : "bg-white/5 text-foreground-dim"
+                            ? "bg-green-500/10 text-green-400"
+                            : "bg-white/5 text-foreground-dim"
                             }`}
                     >
                         {product.is_active ? "已启用" : "已禁用"}

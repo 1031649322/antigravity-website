@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 "use client";
 
 import { useState, useEffect, useRef } from "react";
@@ -179,8 +180,8 @@ function HeroCard({
                     <button
                         onClick={() => onUpdate(section.id, "is_active", !section.is_active)}
                         className={`flex items-center gap-1.5 px-3 py-1 rounded-full text-xs cursor-pointer transition-all ${section.is_active
-                                ? "bg-green-500/10 text-green-400"
-                                : "bg-white/5 text-foreground-dim"
+                            ? "bg-green-500/10 text-green-400"
+                            : "bg-white/5 text-foreground-dim"
                             }`}
                     >
                         {section.is_active ? <Eye size={12} /> : <EyeOff size={12} />}
